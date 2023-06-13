@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  liquibase:
+    change-log: classpath:db/liquibase.xml
+    enabled: true
+  jpa:
+    show-sql: true
