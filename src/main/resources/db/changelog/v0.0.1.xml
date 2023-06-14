@@ -6,7 +6,7 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
     <changeSet id="001" author="m.huzaifawaseem98@gmail.com">
-        <addColumn tableName="TODO">
+        <createTable tableName="TODO">
             <column name="ID" type="UUID">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
@@ -22,6 +22,6 @@
             <column name="UPD_TS" type="datetime">
                 <constraints nullable="false"/>
             </column>
-        </addColumn>
+        </createTable>
     </changeSet>
 </databaseChangeLog>
