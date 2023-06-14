@@ -22,6 +22,9 @@
             <column name="UPD_TS" type="datetime">
                 <constraints nullable="false"/>
             </column>
+            <column name="EXP_TS" type="datetime">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 </databaseChangeLog>
