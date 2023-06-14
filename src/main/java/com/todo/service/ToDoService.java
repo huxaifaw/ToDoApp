@@ -7,7 +7,6 @@ import com.todo.model.ToDoListResp;
 import com.todo.model.ToDoReq;
 import com.todo.model.ToDoResp;
 import com.todo.repository.ToDoRepo;
-import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -63,10 +62,10 @@ public class ToDoService {
     }
 
     private ToDoResp createUpdateTodo(ToDo todo, ToDoReq toDoReq) {
-        if (StringUtils.isNotBlank(toDoReq.getTitle())) {
+        if ("".equals(toDoReq.getTitle().trim())) {
             todo.setTitle(toDoReq.getTitle());
         }
-        if (StringUtils.isNotBlank(toDoReq.getDescription())) {
+        if ("".equals(toDoReq.getDescription().trim())) {
             todo.setDescription(toDoReq.getDescription());
         }
 

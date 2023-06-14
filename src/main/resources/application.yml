@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url:
-    username:
-    password:
+    url: jdbc:sqlserver://localhost:1433;databaseName=ToDoApp;
+    username: sa
+    password: admin
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   liquibase:
     change-log: classpath:db/liquibase.xml
