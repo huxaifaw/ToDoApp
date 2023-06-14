@@ -62,10 +62,10 @@ public class ToDoService {
     }
 
     private ToDoResp createUpdateTodo(ToDo todo, ToDoReq toDoReq) {
-        if ("".equals(toDoReq.getTitle().trim())) {
+        if (!"".equals(toDoReq.getTitle().trim())) {
             todo.setTitle(toDoReq.getTitle());
         }
-        if ("".equals(toDoReq.getDescription().trim())) {
+        if (!"".equals(toDoReq.getDescription().trim())) {
             todo.setDescription(toDoReq.getDescription());
         }
 

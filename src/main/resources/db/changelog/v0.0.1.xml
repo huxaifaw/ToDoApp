@@ -23,7 +23,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="EXP_TS" type="datetime">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
         </createTable>
     </changeSet>

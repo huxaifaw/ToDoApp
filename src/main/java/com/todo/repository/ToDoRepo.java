@@ -21,7 +21,7 @@ public interface ToDoRepo extends JpaRepository<ToDo, UUID> {
 
     @Query("select new com.todo.model.ToDoListModel(td.id, td.title) from ToDo td " +
             "where td.expiredAt is null or td.expiredAt > :date " +
-            "order by td.updatedAt")
+            "order by td.updatedAt desc")
     List<ToDoListModel> findAllNotExpired(LocalDateTime date);
 
     @Query("select new com.todo.model.ToDoResp(td.id, td.title, td.description, td.createdAt, td.updatedAt) from ToDo td " +
