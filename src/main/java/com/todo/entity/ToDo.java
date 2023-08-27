@@ -33,7 +33,7 @@ public class ToDo {
     @Column(name = "TITLE")
     private String title;
 
-    @Column(name = "DESC")
+    @Column(name = "DESCRIPTION")
     private String description;
 
     @NonNull

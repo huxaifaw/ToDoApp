@@ -13,7 +13,7 @@
             <column name="TITLE" type="varchar(200)">
                 <constraints nullable="false"/>
             </column>
-            <column name="DESC" type="text">
+            <column name="DESCRIPTION" type="text">
                 <constraints nullable="true"/>
             </column>
             <column name="CREATE_TS" type="datetime">
